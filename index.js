@@ -1,7 +1,6 @@
 const objectId = require('mongodb').ObjectId;
 const client = require('./mongo_server');
 
-
 client.connectToServer((err, res) => {
     if (err)
         return console.log(err);
