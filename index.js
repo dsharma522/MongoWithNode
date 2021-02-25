@@ -8,7 +8,7 @@ client.connectToServer((err, res) => {
     console.log("connected to database ");
 
     /*
-       insert the single document
+       insert the single documents
      */
     let insert = {name: "peter", gender: "male"};
     client.getCollection().insertOne(insert,(err,res)=> {
